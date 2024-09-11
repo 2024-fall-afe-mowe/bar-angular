@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bar';
+  players = [
+    "Harry"
+    ,"Ron"
+    ,"Hermione"
+  ];
 }
