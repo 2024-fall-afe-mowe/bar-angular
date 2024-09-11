@@ -7,4 +7,11 @@
   >
     {{ player }}
   </li>
+  <!-- Modern Angular uses @for blocks instead of *ngFor -->
+   @for (player of players; track $index) {
+    <li>
+      {{ player }}
+    </li>
+   }
+   <!-- Commmenting in VS Code with Ctrl + / -->
 </ul>
