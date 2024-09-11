@@ -2,9 +2,21 @@
   Players
 </h1>
 <ul>
+  <p>ngfor</p>
   <li
     *ngFor="let player of players"
   >
     {{ player }}
   </li>
+
+  <br>
+  <br>
+  
+  <!-- Modern Angular uses @for blocks instead of *ngFor -->
+  <p>at for</p>
+  @for (player of players; track $index) { 
+    <li>
+      {{player}}
+    </li>
+   }
 </ul>
